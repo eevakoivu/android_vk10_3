@@ -39,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
                         if(url.equals("index.html")){
                             web.loadUrl("file:///android_asset/index.html");
                         }
-                        web.loadUrl("http://"+url);
+                        else{
+                            web.loadUrl("http://"+url);
+                        }
                     }
                     return true;
                 }
